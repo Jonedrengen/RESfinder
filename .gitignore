@@ -14,8 +14,6 @@ analysis/runs/*
 #data
 data/test/*
 
-#dbs
-dbs/*
 
 # KMA index files
 dbs/*/kma_indexing/
