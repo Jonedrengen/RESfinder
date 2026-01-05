@@ -1,7 +1,7 @@
 #vscode
 .vscode/
 
-
+.DS_Store/
 
 # Python / env cruft
 __pycache__/
@@ -12,10 +12,8 @@ analysis/logs/
 analysis/runs/
 
 #data
-data/test/
+test/
 
-# Scratch
-scratch/
 
 # KMA index files
 dbs/*/kma_indexing/
