@@ -7,6 +7,8 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --time=24:00:00
 
+STARTTIMER="$(date +%s)"
+
 #any error -> exit
 set -euo pipefail
 
@@ -71,3 +73,11 @@ parallel --jobs $THREADS run_resfinder {} ::: "$INPUT_DATA_FOLDER"/*.fasta
 
 # Deactivate conda environment
 conda deactivate
+
+# Script Timer
+ENDTIMER="$(date +%s)"
+DURATION=$[${ENDTIMER} - ${STARTTIMER}]
+HOURS=$((${DURATION} / 3600))
+MINUTES=$(((${DURATION} % 3600)/ 60))
+SECONDS=$(((${DURATION} % 3600) % 60))
+echo "RUNTIMER: $HOURS:$MINUTES:$SECONDS (hh:mm:ss)"
