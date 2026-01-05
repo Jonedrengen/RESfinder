@@ -1,18 +1,18 @@
 #vscode
 .vscode/
 
-.DS_Store/
+.DS_Store
 
 # Python / env cruft
 __pycache__/
 *.pyc
 
 # Logs and run outputs
-analysis/logs/
-analysis/runs/
+analysis/logs/*
+analysis/runs/*
 
 #data
-test/
+data/test/*
 
 
 # KMA index files
