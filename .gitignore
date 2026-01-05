@@ -1,0 +1,23 @@
+#vscode
+.vscode/
+
+
+
+# Python / env cruft
+__pycache__/
+*.pyc
+
+# Logs and run outputs
+analysis/logs/
+analysis/runs/
+
+#data
+data/test/
+
+# Scratch
+scratch/
+
+# KMA index files
+dbs/*/kma_indexing/
+*.b
+*.name

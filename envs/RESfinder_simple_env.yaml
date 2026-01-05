@@ -1,0 +1,11 @@
+name: RESfinder
+channels:
+  - conda-forge
+  - bioconda
+  - r
+  - defaults
+dependencies:
+  - resfinder
+  - pandas
+  - xlsxwriter
+prefix: /opt/anaconda3/envs/RESfinder
